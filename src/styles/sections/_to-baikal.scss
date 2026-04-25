@@ -1,0 +1,56 @@
+.to-baikal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1184px;
+    aspect-ratio: 1184 / 740;
+    text-decoration: none;
+
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("/src/img/to-baikal-background.png");
+    background-size: cover;
+    background-position: center;
+
+    &:hover {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/src/img/to-baikal-background.png");
+//      transition: var(--transition-duration);       не работает чета
+    }
+  }
+
+  &__link-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    max-width: 560px;
+    font-size: 72px;
+    margin-bottom: 32px;
+
+    @include mobile {
+      font-size: 32px;
+      max-width: 250px;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__description {
+    max-width: 360px;
+    line-height: var(--line-height-subtitle);
+
+    @include mobile {
+      font-size: 14px;
+      max-width: 240px;
+    }
+  }
+}

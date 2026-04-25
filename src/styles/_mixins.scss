@@ -1,0 +1,56 @@
+@mixin fluid-font($font-min, $font-max, $screen-min, $screen-max) {
+  font-size: #{$font-min}px;
+
+  @media only screen and (min-width: #{$screen-min}px) {
+    font-size: calc(
+      #{$font-min}px + #{($font-max - $font-min)} * (100vw - #{$screen-min}px) / (#{$screen-max} - #{$screen-min})
+    );
+  }
+
+  @media only screen and (min-width: #{$screen-max}px) {
+    font-size: #{$font-max}px;
+  }
+}
+
+@mixin fluid-width($div-min, $div-max, $screen-min, $screen-max) {
+  width: #{$div-min}px;
+
+  @media only screen and (min-width: #{$screen-min}px) {
+    width: calc(
+      #{$div-min}px + #{($div-max - $div-min)} * (100vw - #{$screen-min}px) / (#{$screen-max} - #{$screen-min})
+    );
+  }
+
+  @media only screen and (min-width: #{$screen-max}px) {
+    width: #{$div-max}px;
+  }
+}
+
+@mixin fluid-height($div-min, $div-max, $screen-min, $screen-max) {
+  width: #{$div-min}px;
+
+  @media only screen and (min-width: #{$screen-min}px) {
+    height: calc(
+      #{$div-min}px + #{($div-max - $div-min)} * (100vw - #{$screen-min}px) / (#{$screen-max} - #{$screen-min})
+    );
+  }
+
+  @media only screen and (min-width: #{$screen-max}px) {
+    height: #{$div-max}px;
+  }
+}
+
+@mixin reset-link {
+  color: inherit;
+
+  &,
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+@mixin reset-button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}

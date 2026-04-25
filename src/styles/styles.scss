@@ -1,0 +1,24 @@
+@import 'normalize',
+'fonts',
+'mixins',
+'media',
+'utils',
+'variables',
+'globals';
+
+// Секции
+@import 'sections/header',
+'sections/section',
+'sections/hero',
+'sections/intro',
+'sections/slider',
+'sections/locations',
+'sections/to-baikal',
+'sections/footer';
+
+// Компоненты
+@import 'components/language-swticher';
+
+
+
+

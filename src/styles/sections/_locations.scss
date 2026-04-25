@@ -1,0 +1,50 @@
+.locations {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px 40px;
+
+    @include mobile {
+      grid-template-columns: 1fr;
+      gap: 32px 0;
+//      max-width: 340px;                  или так?
+    }
+  }
+
+  &__link {
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__link-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  &__link-span {
+    font-size: 12px;
+    line-height: 1;
+    letter-spacing: 0.17em;
+    color: var(--color-text-alter);
+    margin-bottom: 12px;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    line-height: var(--line-height-description);
+    row-gap: 26px;
+
+    @include tablet {
+      font-size: 16px;
+    }
+  }
+}

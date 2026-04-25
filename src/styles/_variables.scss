@@ -1,0 +1,39 @@
+:root {
+  --color-background: #2A2C2F;
+  --color-text: #fff;
+  --color-text-alter: #aaa;
+
+  --font-family: Inter;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+
+  --line-height-title: 1.05556;
+  --line-height-subtitle: 1.2;
+  --line-height-description: 1.63;
+
+  --container-small-width: 984px;
+  --container-large-width: 1184px;
+
+  --container-padding-x: 48px;
+
+  @include tablet {
+    --container-padding-x: 24px;
+  }
+
+  @include mobile {
+    --container-padding-x: 16px;
+  }
+
+  --section-padding-y: 46px;
+
+  @include tablet {
+    --section-padding-y: 44px;
+  }
+
+  @include mobile {
+    --section-padding-y: 32px;
+  }
+
+  --transition-duration: 0.2s;
+}

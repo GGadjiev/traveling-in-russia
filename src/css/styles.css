@@ -206,21 +206,21 @@ svg * {
 }
 @font-face {
   font-family: "Inter";
-  src: url("../../../YandexSprint3/src/fonts/Inter_28pt-Regular.ttf") format("truetype");
+  src: url("/src/fonts/Inter_28pt-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Inter";
-  src: url("../../../YandexSprint3/src/fonts/Inter_28pt-Bold.ttf") format("truetype");
+  src: url("/src/fonts/Inter_28pt-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Inter";
-  src: url("../../../YandexSprint3/src/fonts/Inter_28pt-Black.ttf") format("truetype");
+  src: url("/src/fonts/Inter_28pt-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -569,12 +569,12 @@ h2 {
   max-width: 1184px;
   aspect-ratio: 1184/740;
   text-decoration: none;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/src/img/to-baikal-background.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/to-baikal-background.png");
   background-size: cover;
   background-position: center;
 }
 .to-baikal__link:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/src/img/to-baikal-background.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/to-baikal-background.png");
 }
 .to-baikal__link-content {
   display: flex;

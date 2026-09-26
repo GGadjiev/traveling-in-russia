@@ -15,13 +15,12 @@
 
     background-image:
       linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url("/src/img/to-baikal-background.png");
+      url("../img/to-baikal-background.png");
     background-size: cover;
     background-position: center;
 
     &:hover {
-      background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/src/img/to-baikal-background.png");
-//      transition: var(--transition-duration);       не работает чета
+      background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/to-baikal-background.png");
     }
   }
 
